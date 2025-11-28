@@ -2,7 +2,7 @@
 
 **Análisis Integrado de Siniestralidad Vial en Calarcá (2021–2025)**
 **Datos al Ecosistema 2025**
-**Autores:** Elizabeth Garcés Isaza · [Gabriel Garzón](https://github.com/Gabo30-p) · [Jairo Acevedo](https://github.com/jairo-ds)
+**Autores:** [Elizabeth Garces Isaza](https://github.com/egarcesi) · [Gabriel Garzón](https://github.com/Gabo30-p) · [Jairo Acevedo](https://github.com/jairo-ds)
 
 ---
 
@@ -113,7 +113,7 @@ Este proyecto usa el plugin **vite-plugin-gh-pages**.
 
 ## 👥 Colaboradores
 
-* **Elizabeth Garcés Isaza** – Análisis, diseño, visualización, integración de datos.
+* **[Elizabeth Garces Isaza](https://github.com/egarcesi)** – Análisis, diseño, visualización, integración de datos.
 * **[Gabriel Garzón](https://github.com/Gabo30-p)** – ETL, análisis y generación de gráficos.
 * **[Jairo Acevedo](https://github.com/jairo-ds)** – Depuración, estructura y soporte analítico.
 
