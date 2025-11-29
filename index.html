@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViaVisión – Análisis de Riesgo Vial</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Tabulator -->
+    <link rel="stylesheet" href="https://unpkg.com/tabulator-tables@5.4.4/dist/css/tabulator.min.css">
+
+    <!-- Estilos generales -->
+     <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <img src="assets/logo.png" id="logo-viavision" />
+        <h1>ViaVisión – Riesgo y Siniestralidad Vial</h1>
+    </header>
+
+    <!-- NAV -->
+    <nav id="top-nav">
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="Mapa_Viavision.html">Mapa ViaVisión</a>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div id="layout">
+
+        <!-- SIDEBAR -->
+        <aside id="sidebar">
+            <h2>Filtros</h2>
+
+            <label>Tipo de vehículo:</label>
+            <select id="tipo_vehiculo"><option value="">Todos</option></select>
+
+            <label>Gravedad:</label>
+            <select id="gravedad">
+                <option value="">Todas</option>
+                <option value="SOLO DAÑOS">Solo daños</option>
+                <option value="HERIDO">Herido</option>
+                <option value="MUERTO">Muerto</option>
+            </select>
+
+            <label>Año:</label>
+            <select id="year"><option value="">Todos</option></select>
+
+            <button id="btnLimpiar">Limpiar filtros</button>
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main id="content">
+
+                        <!-- GRÁFICA ACCIDENTES POR DÍA -->
+            <section class="grafica-container">
+                <h2>Accidentes por Día</h2>
+                <div class="chart-container">
+                    <canvas id="graficaAccidentesDia"></canvas>
+                </div>
+            </section>
+
+
+            <!-- GRÁFICA ACCIDENTES POR MES -->
+            <section class="grafica-container">
+                <h2>Accidentes por Mes</h2>
+                <div class="chart-container">
+                    <canvas id="graficaAccidentesMes"></canvas>
+                </div>
+            </section>
+
+
+            <!-- GRÁFICA GÉNERO -->
+            <section class="grafica-container">
+                <h2>Distribución por Género</h2>
+                <div class="chart-container">
+                    <canvas id="graficaGenero"></canvas>
+                </div>
+            </section>
+
+
+
+            <!-- MAPA -->
+            <section id="map-section">
+                <h2>Mapa puntos de intervención 2025</h2>
+                <div id="map"></div>
+            </section>
+
+            <!-- TABLA SCORE -->
+            <section id="tabla-section">
+                <h2>Tabla de Score por Accidente</h2>
+                <div id="tablaScore"></div>
+            </section>
+
+                    <h2>Factor (%) por Tipo de Vehículo</h2>
+
+            <!-- TABLA FACTOR (%) -->
+            <table id="tablaFactorPorcentaje">
+                <thead>
+                    <tr>
+                        <th>Tipo de Vehículo</th>
+                        <th>Factor (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>AUTOMOVIL</td><td>71.25</td></tr>
+                    <tr><td>BUS</td><td>82.57</td></tr>
+                    <tr><td>BUSETA</td><td>92.65</td></tr>
+                    <tr><td>CAMION</td><td>75.39</td></tr>
+                    <tr><td>CAMIONETA</td><td>70.08</td></tr>
+                    <tr><td>CAMPERO</td><td>90.37</td></tr>
+                    <tr><td>CICLOMOTOR</td><td>66.67</td></tr>
+                    <tr><td>CUATRIMOTO</td><td>100.00</td></tr>
+                    <tr><td>MAQUINARIA AGRICOLA</td><td>100.00</td></tr>
+                    <tr><td>MAQUINARIA INDUSTRIAL</td><td>100.00</td></tr>
+                    <tr><td>MICROBUS</td><td>80.00</td></tr>
+                    <tr><td>MINITRACTOR</td><td>0.00</td></tr>
+                    <tr><td>MOTOCARRO</td><td>6.00</td></tr>
+                    <tr><td>MOTOCICLETA</td><td>53.02</td></tr>
+                    <tr><td>MOTOTRICICLO</td><td>100.00</td></tr>
+                    <tr><td>REMOLQUE</td><td>25.00</td></tr>
+                    <tr><td>SEMIREMOQLUE</td><td>50.00</td></tr>
+                    <tr><td>TRACTO CAMION</td><td>61.72</td></tr>
+                    <tr><td>VOLQUETA</td><td>85.07</td></tr>
+                </tbody>
+            </table>
+
+            <!-- NUEVA TABLA INTEGRADA -->
+            <h2>Índice de Riesgo por Tipo de Vehículo</h2>
+
+            <table id="tablaIndiceRiesgo">
+                <thead>
+                    <tr>
+                        <th>Tipo de Vehículo</th>
+                        <th>N° Accidentes</th>
+                        <th>Severidad Promedio</th>
+                        <th>Parque Automotor</th>
+                        <th>Obsolescencia Promedio</th>
+                        <th>Índice de Riesgo (0–100)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr><td>MOTO</td><td>603</td><td>2.42</td><td>9107</td><td>0.65</td><td>100.00</td></tr>
+                    <tr><td>BUS</td><td>15</td><td>2.16</td><td>292</td><td>0.85</td><td>48.25</td></tr>
+                    <tr><td>CAMION</td><td>26</td><td>1.97</td><td>1081</td><td>0.69</td><td>30.88</td></tr>
+                    <tr><td>CAMIONETA</td><td>38</td><td>1.88</td><td>1357</td><td>0.70</td><td>26.62</td></tr>
+                    <tr><td>AUTOMOVIL</td><td>139</td><td>1.73</td><td>3965</td><td>0.71</td><td>26.41</td></tr>
+                    <tr><td>VOLQUETA</td><td>4</td><td>1.67</td><td>134</td><td>0.85</td><td>14.33</td></tr>
+                    <tr><td>BICICLETA</td><td>25</td><td>2.10</td><td>0</td><td>0.00</td><td>9.37</td></tr>
+                    <tr><td>TRACTOCAMION</td><td>17</td><td>1.94</td><td>1</td><td>0.00</td><td>0.00</td></tr>
+                </tbody>
+            </table>
+            
+
+        </main>
+    </div>
+
+    <footer>
+        ViaVisión © 2025 – Análisis de Riesgo Vial
+    </footer>
+
+    <!-- LIBRERÍAS JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/tabulator-tables@5.4.4/dist/js/tabulator.min.js"></script>
+    <script src="https://unpkg.com/h3-js@4.1.0/dist/h3-js.umd.js"></script>
+
+    <!-- TU LÓGICA -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
+
