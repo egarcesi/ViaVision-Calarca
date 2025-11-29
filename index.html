@@ -61,9 +61,39 @@
         <!-- CONTENIDO -->
         <main id="content">
 
-                        <!-- GRÁFICA ACCIDENTES POR DÍA -->
+            <!-- INTRODUCCIÓN -->
+            <section id="introduccion">
+                <h2>Bienvenido a ViaVisión</h2>
+                <p>
+                    ViaVisión es una plataforma web diseñada para integrar información crítica del territorio y generar <strong>perfiles de riesgo vial</strong> para la toma de decisiones basada en evidencia. 
+                    Aquí encontrará análisis de accidentes, puntos críticos y parque automotor del municipio de Calarcá.
+                </p>
+                <p>
+                    Este dashboard interactivo presenta un análisis completo de la siniestralidad vial en Calarcá, 
+                    mostrando la distribución de accidentes entre los años 2021 a 2025 por día y mes, la participación por género de los involucrados, 
+                    y un mapa con los puntos de intervención más críticos identificados por el municipio.
+                </p>
+                
+                <p>Los objetivos de esta herramienta son:</p>
+                <ul>
+                    <li><strong>Focalización territorial:</strong> Identificar tramos y zonas con mayor riesgo.</li>
+                    <li><strong>Diseño de intervenciones:</strong> Priorizar acciones en infraestructura, control vehicular y cultura ciudadana.</li>
+                    <li><strong>Análisis de parque automotor:</strong> Correlacionar accidentes con el tipo de vehículo y su estado de obsolescencia.</li>
+                </ul>
+                <p>Use los filtros a la izquierda para personalizar la vista según tipo de vehículo, gravedad y año.</p>
+
+                <p>
+                    Para el mapa de caracterización de siniestralidad vial del municipio, use el botón <strong>Mapa ViaVisión</strong> para explorar los puntos de accidentalidad con información detallada por ubicación. 
+                    Cada zona está representada por hexágonos que muestran la matriz de riesgo de siniestralidad vial. 
+                    Al interactuar con ellos podrá descargar un PDF, hacer zoom y ver recomendaciones asociadas al factor de riesgo según el actor vial involucrado.
+                </p>
+                
+            </section>
+            
+            <!-- GRÁFICA ACCIDENTES POR DÍA -->
             <section class="grafica-container">
                 <h2>Accidentes por Día</h2>
+                <p>Esta gráfica muestra cuántos accidentes ocurrieron cada día del mes. Útil para identificar los días con mayor frecuencia de incidentes.</p>
                 <div class="chart-container">
                     <canvas id="graficaAccidentesDia"></canvas>
                 </div>
@@ -73,6 +103,7 @@
             <!-- GRÁFICA ACCIDENTES POR MES -->
             <section class="grafica-container">
                 <h2>Accidentes por Mes</h2>
+                <p>Visualiza la tendencia mensual de los accidentes, permitiendo detectar patrones estacionales.</p>
                 <div class="chart-container">
                     <canvas id="graficaAccidentesMes"></canvas>
                 </div>
@@ -82,6 +113,7 @@
             <!-- GRÁFICA GÉNERO -->
             <section class="grafica-container">
                 <h2>Distribución por Género</h2>
+                <p>Muestra la proporción de accidentes según el género de los involucrados.</p>
                 <div class="chart-container">
                     <canvas id="graficaGenero"></canvas>
                 </div>
@@ -92,6 +124,7 @@
             <!-- MAPA -->
             <section id="map-section">
                 <h2>Mapa puntos de intervención 2025</h2>
+                <p>Ubicación de los puntos de zonas criticas de intervención establecidas para el 2025 a partir de datos brindados por la Alcaldia de Calarcá.</p>
                 <div id="map"></div>
             </section>
 
@@ -101,7 +134,7 @@
                 <div id="tablaScore"></div>
             </section>
 
-                    <h2>Factor (%) por Tipo de Vehículo</h2>
+                    <h2>Factor de obsolescencia (%) parque automotor Calarcá</h2>
 
             <!-- TABLA FACTOR (%) -->
             <table id="tablaFactorPorcentaje">
@@ -134,8 +167,13 @@
                 </tbody>
             </table>
 
-            <!-- NUEVA TABLA INTEGRADA -->
-            <h2>Índice de Riesgo por Tipo de Vehículo</h2>
+            <!-- TABLA INTEGRADA -->
+            <h2>Índice de Riesgo por accidentes y parque automotor</h2>
+            <p>
+                Esta gráfica combina el número de accidentes, la severidad promedio y el parque automotor para cada tipo de vehículo. 
+                Además, considera el <strong>Factor de Obsolescencia (%)</strong> del parque automotor en Calarcá. 
+                Los valores permiten identificar qué vehículos representan mayor riesgo en términos de accidentalidad y vulnerabilidad.
+            </p>
 
             <table id="tablaIndiceRiesgo">
                 <thead>
@@ -165,8 +203,12 @@
         </main>
     </div>
 
+    <!-- FOOTER -->
     <footer>
         ViaVisión © 2025 – Análisis de Riesgo Vial
+        <br>
+        <a href="https://www.calarca-quindio.gov.co" target="_blank">Alcaldía de Calarcá</a> | 
+        <a href="https://www.datos.gov.co" target="_blank">Datos Abiertos</a>
     </footer>
 
     <!-- LIBRERÍAS JS -->
@@ -174,9 +216,10 @@
     <script src="https://unpkg.com/tabulator-tables@5.4.4/dist/js/tabulator.min.js"></script>
     <script src="https://unpkg.com/h3-js@4.1.0/dist/h3-js.umd.js"></script>
 
-    <!-- TU LÓGICA -->
+    <!-- LÓGICA -->
     <script src="js/app.js"></script>
 
 </body>
 </html>
+
 
