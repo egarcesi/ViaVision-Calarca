@@ -1,0 +1,146 @@
+[
+    {
+        "Id":1,
+        "Latitud":4.51895,
+        "Longitud":-75.651536,
+        "Direccion":"Cruce Cra 34A con Cll 16A, Calarcá, Quindío",
+        "Afectacion":"Daño en pavimento que genera bache",
+        "Categoria":"Bache",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":2,
+        "Latitud":4.522506,
+        "Longitud":-75.643237,
+        "Direccion":"Vía Cra 24 entre Clls 27–28, Calarcá, Quindío",
+        "Afectacion":"Afectación en capa de rodadura que genera resalto",
+        "Categoria":"Resalto \/ Desnivel",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":3,
+        "Latitud":4.538446,
+        "Longitud":-75.639475,
+        "Direccion":"Urb. Gaitán, entre Mz A–B, Calarcá, Quindío",
+        "Afectacion":"Afectación en pavimento que genera bache",
+        "Categoria":"Bache",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":4,
+        "Latitud":4.523557,
+        "Longitud":-75.644334,
+        "Direccion":"Cra 26 entre Cll 28 y Av Colón, Calarcá, Quindío",
+        "Afectacion":"Afectación en rodadura que impacta movilidad",
+        "Categoria":"Afectación movilidad",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":5,
+        "Latitud":4.538124,
+        "Longitud":-75.638379,
+        "Direccion":"Cra 26 entre Clls 48A–49, Calarcá, Quindío",
+        "Afectacion":"Daño en rodadura que afecta movilidad",
+        "Categoria":"Afectación movilidad",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":6,
+        "Latitud":4.538116,
+        "Longitud":-75.638467,
+        "Direccion":"Cruce Cra 26 con Cll 48A, Calarcá, Quindío",
+        "Afectacion":"Deficiencia en pavimento con cambios de altura",
+        "Categoria":"Resalto \/ Desnivel",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":7,
+        "Latitud":4.525174,
+        "Longitud":-75.640797,
+        "Direccion":"Cruce Cra 22 con Cll 32, Calarcá, Quindío",
+        "Afectacion":"Afectación en pavimento que genera bache",
+        "Categoria":"Bache",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":8,
+        "Latitud":4.513973,
+        "Longitud":-75.644844,
+        "Direccion":"Vía principal Barrio La Huerta, Mz I–G–H, Calarcá, Quindío",
+        "Afectacion":"Afectación por redes de servicios que daña pavimento contiguo",
+        "Categoria":"Afectación movilidad",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":9,
+        "Latitud":4.425209,
+        "Longitud":-75.718137,
+        "Direccion":"Puente Cra 8 con Cll 9, Barcelona, Calarcá, Quindío",
+        "Afectacion":"No existe protección peatonal",
+        "Categoria":"Riesgo peatonal",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":10,
+        "Latitud":4.524274,
+        "Longitud":-75.635004,
+        "Direccion":"Acceso I.E. San Rafael, Urb. El Recuerdo, Calarcá, Quindío",
+        "Afectacion":"Falta estructura de control de velocidad",
+        "Categoria":"Control de velocidad",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":11,
+        "Latitud":4.524263,
+        "Longitud":-75.635784,
+        "Direccion":"Acceso Villa Italia y Manantial, El Recuerdo, Calarcá, Quindío",
+        "Afectacion":"Vía con altas velocidades por geometría",
+        "Categoria":"Altas velocidades",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":12,
+        "Latitud":4.517436,
+        "Longitud":-75.654046,
+        "Direccion":"Resalto sector Colegio Segundo Henao, Cra 34A, Calarcá, Quindío",
+        "Afectacion":"Resalto deficiente genera inseguridad",
+        "Categoria":"Resalto \/ Desnivel",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":13,
+        "Latitud":4.53838,
+        "Longitud":-75.639371,
+        "Direccion":"Urb. Gaitán, entre Mz A–B, Calarcá, Quindío",
+        "Afectacion":"Altas velocidades por geometría de la vía",
+        "Categoria":"Altas velocidades",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":14,
+        "Latitud":4.525441,
+        "Longitud":-75.636709,
+        "Direccion":"Cra 17 entre Clls 33–34, Barrio Naranjal, Calarcá, Quindío",
+        "Afectacion":"Altas velocidades por condiciones geométricas",
+        "Categoria":"Altas velocidades",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":15,
+        "Latitud":4.430309,
+        "Longitud":-75.717342,
+        "Direccion":"Cra 11 sector Polideportivo, Barcelona, Calarcá, Quindío",
+        "Afectacion":"Resalto deficiente genera inseguridad",
+        "Categoria":"Resalto \/ Desnivel",
+        "Unnamed: 6":null
+    },
+    {
+        "Id":16,
+        "Latitud":4.516987,
+        "Longitud":-75.65497,
+        "Direccion":"Cra 34A entre Clls 15–16, Calarcá, Quindío",
+        "Afectacion":"Afectación en pavimento que genera baches",
+        "Categoria":"Bache",
+        "Unnamed: 6":null
+    }
+]
